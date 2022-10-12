@@ -1,0 +1,1 @@
+{"version":3,"file":"main.js","names":["elem"],"sources":["main.js"],"sourcesContent":["/*\tСвойства узлов DOM\r\n\telem.nodeName - опредилить к какому узлу относиться елемент\r\n*/\r\n\r\n\r\n\r\n\r\nelem\r\n\r\n\r\n\r\n"],"mappings":";;AAAA;AACA;AACA;AAKAA,IAAI"}
