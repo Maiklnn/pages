@@ -1,0 +1,107 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+// swiper default
+.swiper {
+	&-container {
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+	}
+
+	&-wrapper {
+		display: flex;
+		width: 100%;
+		height: 100%;
+	}
+
+	&-slide {
+		flex-shrink: 0;
+	}
+}
+
+// slider
+.name-slider {
+	// основная секция слайдера
+	&-section {
+		overflow: hidden;
+		position: relative;
+		max-width: 100%;
+		text-align: center;
+	}
+	// контейнер слайда по которому равняеться слайдер
+	&-container {
+		margin-left: -700px;
+		max-width: 800px;
+	}
+
+	// сам slider
+	& {
+		overflow: initial;
+
+		// slide
+		&-slide {
+			min-height: 100px;
+			background-color: green;
+			text-align: center;
+		}
+
+		// pagination
+		&-pagination {
+			margin: 20px;
+
+			outline: 1px solid red;
+			display: inline-block;
+			.swiper-pagination-bullet {
+				display: inline-block;
+				width: 10px;
+				height: 10px;
+				margin: 0 15px;
+				opacity: 1;
+				cursor: pointer;
+				border-radius: 100%;
+				&:hover {
+					opacity: .7;
+				}
+				background-color: #1b4da9;
+			}
+			.swiper-pagination-bullet-active {
+				background-color: red;
+			}
+		}
+
+		// arr
+		&-navigation {
+			width: 500px;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			&__button-prev, &__button-next {
+				background-color: #1b4da9;
+				width: 20px;
+				height: 20px;
+
+				// если далее нету слайдов
+				&.swiper-button-disabled,
+				&.swiper-button-disabled {
+					background-color: red;
+					pointer-events: none;
+				}
+			}
+
+		}
+
+
+
+	}
+
+}
+
+
+
+
+
